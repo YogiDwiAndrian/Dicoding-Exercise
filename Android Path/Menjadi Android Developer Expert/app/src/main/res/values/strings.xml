@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Movie Kita</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_tv">TV Show</string>
+    <string name="title_bookmark">Bookmark</string>
+
+    <string name="title">Title</string>
+    <string name="release_date">0000</string>
+    <string name="runtime">000 min</string>
+    <string name="revenue">0M</string>
+    <string name="rate_int">10</string>
+    <string name="vote_count">0 vote</string>
+    <string name="genre">Genre</string>
+    <string name="rate_number">rate number</string>
+    <string name="ended">Ended</string>
+    <string name="search">Search</string>
+    <string name="hastag">#hastag</string>
+    <string name="search_movie">Search movie…</string>
+    <string name="search_tv">Search tv…</string>
+
+    <string name="category_tv">TV SHOW</string>
+    <string name="category_movie">MOVIE</string>
+    <string name="category_bookmark">BOOKMARK</string>
+    <string name="category_home">HOME</string>
+
+    <string name="popular_movie">Now Playing Movie</string>
+    <string name="popular_tv">Popular Tv Show</string>
+
+    <string name="tv_lb_type">Type :</string>
+    <string name="tv_lb_genre">Genre :</string>
+    <string name="tv_lb_language">Language :</string>
+    <string name="tv_lb_countries">Countries :</string>
+    <string name="label_description">Description</string>
+    <string name="label_revenue">Revenue</string>
+    <string name="label_episodes">episodes</string>
+    <string name="label_season">s</string>
+    <string name="label_overview">Overview</string>
+
+    <string name="cd_slider">image slider</string>
+    <string name="cd_splashscreen">image splash screen</string>
+    <string name="cd_bg_hastag">background hastag</string>
+    <string name="cd_image_poster">image poster</string>
+    <string name="cd_synopsis">icon expand/collapse</string>
+    <string name="cd_star">icon star</string>
+    <string name="cd_bg_detail">background detail activity</string>
+    <string name="cd_backdrop_detail">backdrop image</string>
+    <string name="cd_dot">image dot</string>
+    <string name="cd_revenue">icon revenue</string>
+    <string name="cd_bookmark">icon bookmark</string>
+    <string name="cd_image_button_back">image button back</string>
+
+    <string name="share">Saya merekomendasikan anda menggunakan aplikasi Movie Kita, Download Sekarang di Playstore</string>
+    <string name="quote">"Satu-satunya cara mencapai hal yang mustahil adalah dengan meyakini bahwa hal itu mungkin"</string>
+    <string name="source_quote">Alice: Through the Looking Glass</string>
+    <string name="developer">Developed By Yogi Dwi Andrian</string>
+</resources>

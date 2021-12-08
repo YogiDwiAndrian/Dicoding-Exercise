@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Github Media</string>
+    <string name="todo">TODO</string>
+    <string name="users">Username</string>
+    <string name="location">location</string>
+    <string name="about">About</string>
+    <string name="profile">Yogi Dwi Andrian</string>
+    <string name="email">yogidwiandrian11@gmail.com</string>
+    <string name="lbl_name">Name :</string>
+    <string name="lbl_company">Company :</string>
+    <string name="lbl_location">Location :</string>
+    <string name="lbl_repository">Repository :</string>
+    <string name="lbl_follower">Followers :</string>
+    <string name="lbl_following">Following :</string>
+    <string name="tap_exit">Tap again to exit</string>
+    <string name="empty_load">NO RESULT</string>
+    <string name="localization">localization</string>
+    <string name="search_hint">Search Username</string>
+
+    <string name="text_setting_language">Setting Language</string>
+    <string name="languag_en">English</string>
+    <string name="language_id">Indonesia</string>
+
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Following</string>
+
+    <string name="btn_save">SAVE</string>
+    <string name="url">Open Github</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="remove_from_favorite">Remove from Favorite</string>
+
+    <string name="warning">Warning</string>
+    <string name="msg_remove">Are you sure to remove?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="msg_remove_error">Error removing</string>
+    <string name="favorite_noFound">No favorite users found</string>
+
+    <string name="daily_message">"let's check the application"</string>
+
+    <string name="appwidget_text">My Favorite User</string>
+    <string name="empty_text">Data Not Found</string>
+    <string name="refresh">Refresh</string>
+
+
+</resources>

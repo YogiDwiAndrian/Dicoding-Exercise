@@ -1,0 +1,4 @@
+include ':bookmark'
+include ':app'
+include ':core'
+rootProject.name = "Movie Kita"

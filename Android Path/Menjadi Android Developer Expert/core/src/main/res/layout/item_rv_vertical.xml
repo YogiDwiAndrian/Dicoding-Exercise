@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPosterVer"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/gray"
+        android:contentDescription="@string/cd_poster"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemContainer"
+        app:layout_constraintStart_toStartOf="@+id/itemContainer" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTitleVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/fira_sans"
+                android:paddingEnd="170dp"
+                android:singleLine="true"
+                android:text="@string/title"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+            <RatingBar
+                android:id="@+id/rateBarVer"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:max="10"
+                android:numStars="5"
+                android:rating="2"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleVer"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleVer" />
+
+            <TextView
+                android:id="@+id/tvRateNumVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/fira_sans"
+                android:text="@string/ratenum"
+                android:textColor="#F5B402"
+                app:layout_constraintBottom_toBottomOf="@+id/rateBarVer"
+                app:layout_constraintStart_toEndOf="@+id/rateBarVer"
+                app:layout_constraintTop_toTopOf="@+id/rateBarVer" />
+
+            <TextView
+                android:id="@+id/tvRelease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/release_date"
+                android:textColor="@color/colorFont"
+                app:layout_constraintStart_toStartOf="@+id/rateBarVer"
+                app:layout_constraintTop_toBottomOf="@+id/tvRateNumVer" />
+
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="2"
+                android:paddingEnd="170dp"
+                android:text="@string/genre"
+                android:textColor="@color/colorFont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvRelease"
+                app:layout_constraintTop_toBottomOf="@+id/tvRelease"
+                tools:ignore="RtlSymmetry" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

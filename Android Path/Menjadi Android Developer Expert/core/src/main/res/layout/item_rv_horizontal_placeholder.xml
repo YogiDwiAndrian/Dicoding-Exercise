@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/gray"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivPosterHor"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/cd_poster"
+            android:src="@color/placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@color/placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ivPosterHor"
+            app:layout_constraintTop_toBottomOf="@+id/ivPosterHor"
+            app:riv_corner_radius="10dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rateBarHor"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@color/placeholder"
+            app:layout_constraintStart_toStartOf="@+id/ivPosterHor"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:riv_corner_radius="10dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/tvRateNumHor"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="2dp"
+            android:scaleType="centerCrop"
+            android:src="@color/placeholder"
+            app:layout_constraintBottom_toBottomOf="@+id/rateBarHor"
+            app:layout_constraintStart_toEndOf="@+id/rateBarHor"
+            app:layout_constraintTop_toTopOf="@+id/rateBarHor"
+            app:riv_corner_radius="10dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

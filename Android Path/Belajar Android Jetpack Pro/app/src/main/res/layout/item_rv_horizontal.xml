@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_poster_hz"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/cd_gambar_poster"
+            android:src="@drawable/poster_alita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tittle_hz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/fira_sans"
+            android:singleLine="true"
+            android:text="@string/title"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@+id/img_poster_hz"
+            app:layout_constraintTop_toBottomOf="@+id/img_poster_hz" />
+
+        <RatingBar
+            android:id="@+id/ratebar_hz"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:max="10"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar"
+            app:layout_constraintStart_toStartOf="@+id/img_poster_hz"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittle_hz" />
+
+        <TextView
+            android:id="@+id/ratenum_hz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/ratenum"
+            android:textColor="#F5B402"
+            app:layout_constraintBottom_toBottomOf="@+id/ratebar_hz"
+            app:layout_constraintStart_toEndOf="@+id/ratebar_hz"
+            app:layout_constraintTop_toTopOf="@+id/ratebar_hz" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

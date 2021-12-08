@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPosterVer"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/placeholder"
+        android:contentDescription="@string/cd_poster"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemContainer"
+        app:layout_constraintStart_toStartOf="@+id/itemContainer" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/tvTitleVer"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                android:src="@color/placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="10dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rateBarVer"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="centerCrop"
+                android:src="@color/placeholder"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleVer"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleVer"
+                app:riv_corner_radius="10dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/tvRateNumVer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="2dp"
+                android:scaleType="centerCrop"
+                android:src="@color/placeholder"
+                app:layout_constraintBottom_toBottomOf="@+id/rateBarVer"
+                app:layout_constraintStart_toEndOf="@+id/rateBarVer"
+                app:layout_constraintTop_toTopOf="@+id/rateBarVer"
+                app:riv_corner_radius="10dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/tvRelease"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="centerCrop"
+                android:src="@color/placeholder"
+                app:layout_constraintStart_toStartOf="@+id/rateBarVer"
+                app:layout_constraintTop_toBottomOf="@+id/tvRateNumVer"
+                app:riv_corner_radius="10dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/tvGenre"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                android:src="@color/placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvRelease"
+                app:layout_constraintTop_toBottomOf="@+id/tvRelease"
+                app:riv_corner_radius="10dp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

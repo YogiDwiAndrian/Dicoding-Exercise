@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Consumer Github</string>
+    <string name="todo">TODO</string>
+    <string name="users">Nama Pengguna</string>
+    <string name="location">Lokasi</string>
+    <string name="about">Tentang</string>
+    <string name="profile">Yogi Dwi Andrian</string>
+    <string name="email">yogidwiandrian11@gmail.com</string>
+    <string name="lbl_name">Nama :</string>
+    <string name="lbl_company">Perusahaan :</string>
+    <string name="lbl_location">Lokasi :</string>
+    <string name="lbl_repository">Gudang :</string>
+    <string name="lbl_follower">Pengikut :</string>
+    <string name="lbl_following">Diikuti :</string>
+    <string name="tap_exit">Ketuk lagi untuk keluar</string>
+    <string name="empty_load">Tidak ada hasil</string>
+    <string name="localization">id-ID</string>
+    <string name="search_hint">Cari Nama Pengguna</string>
+
+    <string name="text_setting_language">Pengaturan Bahasa</string>
+    <string name="languag_en">English</string>
+    <string name="language_id">Indonesia</string>
+
+    <string name="tab_text_1">Pengikut</string>
+    <string name="tab_text_2">Diikuti</string>
+
+    <string name="btn_save">SIMPAN</string>
+    <string name="url">Buka Github</string>
+    <string name="add_to_favorite">Tambahkan ke Favorit</string>
+    <string name="remove_from_favorite">Hapus Dari Favorit</string>
+
+    <string name="warning">Peringatan</string>
+    <string name="msg_remove">Apa kamu yakin untuk menghapusnya?</string>
+    <string name="yes">Ya</string>
+    <string name="no">tidak</string>
+    <string name="msg_remove_error">Kesalahan penghapusan</string>
+    <string name="favorite_noFound">Tidak ditemukan pengguna favorit</string>
+
+    <string name="daily_message">"Ayo segera buka aplikasinya"</string>
+</resources>

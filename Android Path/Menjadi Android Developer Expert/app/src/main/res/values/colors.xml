@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F243E</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#293659</color>
+
+    <color name="colorNavIconTrue">#1044AE</color>
+    <color name="colorNavIcon">#C0CADB</color>
+    <color name="colorFont">#4F6B95</color>
+    <color name="colorTextTertiary">#EFEFEF</color>
+    <color name="searchViewBg">#141A32</color>
+
+    <color name="purple_500">#9c27b0</color>
+    <color name="deep_purple_500">#673ab7</color>
+
+    <color name="white">#ffff</color>
+    <color name="gray">#B3B3B3</color>
+    <color name="cyan">#82CACC</color>
+
+    <color name="placeholder">#7E070707</color>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Title</string>
+    <string name="hastag">#hastag</string>
+    <string name="ratenum">ratenum</string>
+    <string name="release_date">0000</string>
+    <string name="genre">Genre</string>
+
+    <string name="cd_poster">image poster</string>
+    <string name="cd_bg_hastag">background hastag</string>
+    <string name="cd_slider">image slider</string>
+</resources>

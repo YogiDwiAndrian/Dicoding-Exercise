@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    tools:context=".ui.detail.DetailMovieActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/cyan"
+            android:contentDescription="@string/cd_backdrop_detail"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="196dp"
+            android:background="@drawable/detail_bg"
+            android:contentDescription="@string/cd_bg_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_poster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@color/gray"
+            app:layout_constraintBottom_toBottomOf="@+id/img_backdrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:riv_corner_radius="10dp" />
+
+        <TextView
+            android:id="@+id/tv_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fira_sans_medium"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_backdrop" />
+
+        <TextView
+            android:id="@+id/tv_release_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/release_date"
+            android:textColor="@color/colorFont"
+            app:layout_constraintEnd_toStartOf="@+id/img_dot"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittle" />
+
+        <ImageView
+            android:id="@+id/img_dot"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:contentDescription="@string/cd_dot"
+            android:src="@drawable/ic_dot"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_release_year"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tittle"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittle"
+            app:layout_constraintTop_toTopOf="@+id/tv_release_year" />
+
+        <TextView
+            android:id="@+id/tv_runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/runtime"
+            android:textColor="@color/colorFont"
+            app:layout_constraintStart_toEndOf="@+id/img_dot"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/cd_revenue"
+            android:src="@drawable/ic_baseline_attach_money_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_revenue"
+            app:layout_constraintEnd_toStartOf="@+id/tv_revenue"
+            app:layout_constraintTop_toTopOf="@+id/tv_revenue" />
+
+        <TextView
+            android:id="@+id/tv_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/revenue"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_year" />
+
+        <TextView
+            android:id="@+id/tv_lb_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/label_revenue"
+            android:textColor="@color/colorFont"
+            app:layout_constraintEnd_toEndOf="@+id/tv_revenue"
+            app:layout_constraintStart_toStartOf="@+id/tv_revenue"
+            app:layout_constraintTop_toBottomOf="@+id/tv_revenue" />
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/cd_star"
+            android:src="@drawable/ic_baseline_star_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
+            app:layout_constraintEnd_toStartOf="@+id/tv_rating"
+            app:layout_constraintTop_toTopOf="@+id/tv_rating" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ratinf"
+            android:textColor="#F5B402"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_lb_revenue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_revenue" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/vote_count"
+            android:textColor="@color/colorFont"
+            app:layout_constraintEnd_toEndOf="@+id/tv_rating"
+            app:layout_constraintStart_toStartOf="@+id/img_star"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rating" />
+
+        <ImageButton
+            android:id="@+id/ic_bookmarkMv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_bookmark"
+            android:src="@drawable/ic_baseline_bookmark_border_24"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_lb_revenue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_revenue"
+            app:layout_constraintTop_toTopOf="@+id/tv_revenue" />
+
+        <TextView
+            android:id="@+id/tv_lb_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/label_synopsis"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lb_revenue" />
+
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/tv_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:animDuration="200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lb_synopsis"
+            app:maxCollapsedLines="3">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorFont" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cd_sypnosis"
+                android:paddingTop="10dp"
+                android:paddingEnd="16dp"
+                tools:ignore="RtlSymmetry" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <TextView
+            android:id="@+id/tv_lb_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/label_description"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_synopsis" />
+
+        <TextView
+            android:id="@+id/tv_lb_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/tv_lb_genre"
+            android:textColor="@color/colorFont"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lb_description" />
+
+        <TextView
+            android:id="@+id/tv_lb_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/tv_lb_budget"
+            android:textColor="@color/colorFont"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lb_genre" />
+
+        <TextView
+            android:id="@+id/tv_lb_countries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/tv_lb_countries"
+            android:textColor="@color/colorFont"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lb_budget" />
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:singleLine="true"
+            android:textColor="@color/colorFont"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_lb_genre"
+            app:layout_constraintStart_toEndOf="@+id/tv_lb_genre"
+            app:layout_constraintTop_toTopOf="@+id/tv_lb_genre" />
+
+        <TextView
+            android:id="@+id/tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:singleLine="true"
+            android:textColor="@color/colorFont"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_lb_budget"
+            app:layout_constraintStart_toEndOf="@+id/tv_lb_budget"
+            app:layout_constraintTop_toTopOf="@+id/tv_lb_budget" />
+
+        <TextView
+            android:id="@+id/tv_countries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/fira_sans"
+            android:singleLine="true"
+            android:textColor="@color/colorFont"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_lb_countries"
+            app:layout_constraintStart_toEndOf="@+id/tv_lb_countries"
+            app:layout_constraintTop_toTopOf="@+id/tv_lb_countries" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/ld_detailMv"
+            style="@style/SpinKitView.Large.CubeGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:SpinKit_Color="#E91E63"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

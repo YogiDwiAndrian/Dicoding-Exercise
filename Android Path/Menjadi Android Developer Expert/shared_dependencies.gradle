@@ -1,0 +1,32 @@
+dependencies {
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation "androidx.cardview:cardview:$cardview_version"
+    implementation "com.github.smarteist:autoimageslider:$autoimagesliderVersion"
+    implementation "com.github.ybq:Android-SpinKit:$SpinKitVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation "jp.wasabeef:glide-transformations:$glideTransformationsVersion"
+    implementation "com.ms-square:expandableTextView:$expandableTextViewVersion"
+    implementation "com.makeramen:roundedimageview:$roundedimageviewVersion"
+    implementation "com.facebook.shimmer:shimmer:$shimmerVersion"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //depedency injection koin
+    implementation "org.koin:koin-core:$koin_version"
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
+
+    //leak canary
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.6'
+}
